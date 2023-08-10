@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 // allow 10 requests per minute per IP address,
-Route::middleware('throttle:10,1')->get('/get-weather', [WeatherController::class, 'getWeather'])->middleware('custom.middleware');;
+Route::middleware('throttle:10,1')->get('/get-weather', [WeatherController::class, 'getWeather'])->middleware('custom.middleware');
